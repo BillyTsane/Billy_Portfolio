@@ -42,6 +42,24 @@ a,a:hover
 {
    text-decoration: none;
 }
+.btn-1
+{
+   background-color: var(--main-color);
+   padding: 15px 40px;
+   border: none;
+   border-radius: 30px;
+   color: var(--white);
+   font-size: 16px;
+   text-transform: capitalize;
+   box-shadow: var(--shadow-black-300);
+   font-weight: 500;
+   transition: all 0.5s ease;
+}
+.btn-1:hover
+{
+   color: var(--main-color);
+   background-color: var(--white);
+}
 /* navbar */
 .navbar
 {
@@ -95,4 +113,43 @@ a,a:hover
 .navbar .nav-item .nav-link:hover::before
 {
   height: 45px;
+}
+/* home section */
+.header-content
+{
+    background-color: #fbfbfb;
+    height: 800px;
+    padding-top: 100px;
+    position: relative;
+    overflow: hidden;
+   
+}
+.home-text h4
+{
+   font-size: 30px; 
+   font-weight: 550;
+   padding-bottom: 8px;
+   color: var(--main-color);
+}
+.home-text h1 
+{
+   font-size: 50px; 
+   font-weight: 550;
+   padding-bottom: 8px;
+   color: var(--black-900);
+}
+.home-text p 
+{
+   font-size: 10px; 
+   line-height: 28px;
+   color: var(--black-400);
+   font-weight: 300;
+   padding-bottom: 30px;
+}
+.home-img
+{
+   max-width: 430px;
+   width: 100%;
+   margin: 0 auto;
+   position: relative;
 }
