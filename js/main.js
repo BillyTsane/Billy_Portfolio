@@ -1,87 +1,78 @@
-$(document).ready(function()
-{
+// Update your main.js with this improved version
+$(document).ready(function() {
     // navbar shrink
-    $(window).on("scroll",function()
-    {
-        if($(this).scrollTop() > 90)
-        {
+    $(window).on("scroll", function() {
+        if($(this).scrollTop() > 90) {
             $(".navbar").addClass("navbar-shrink");
-        }
-        else
-        {
+        } else {
             $(".navbar").removeClass("navbar-shrink");
         }
-    })
-    // parallax js
-    function parallaxMouse()
-    {
-        if($('#parallax').length)
-        {
+    });
+    
+    // Initialize parallax
+    function parallaxMouse() {
+        if($('#parallax').length) {
             var scene = document.getElementById('parallax');
             var parallax = new Parallax(scene);
         }
     }
     parallaxMouse();
-    // skills bar
-    $(window).scroll(function()
-    {
-        var hT = $("#skill-bar-wrapper").offset().top,
-        hH = $("#skill-bar-wrapper").outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-        if( wS > (hT+hH-1.4*wH))
-        {
-            jQuery('.skillbar-container').each(function()
-            {
-                jQuery(this).find('.skills').animate({
-                    width:jQuery(this).attr('data-percent')
-                }, 5000) // 5 seconds
-            })
-        }
-    })
-    // filter
-    let $btns = $('.img-gallery .sortBtn .filter-btn');
-    $btns.click(function(e) {
-        $('.img-gallery .sortBtn .filter-btn').removeClass('active');
-        e.target.classList.add('active');
-        let selector = $(e.target).attr('data-filter');
-        $('.img-gallery .grid').isotope
-        ({
-            filter:selector
-        })
-        return false;
-    })
-    $('.image-popup').magnificPopup
-    ({
-        type: 'image',
-        gallery: { enabled: true}
-    })
-    // owl carousel
-    $('.testimonial-slider').owlCarousel({
-        loop:true,
-        margin:0,
-        responsiveClass:true,
-        autoplay:true,
-        responsive:{
-            0:{
-                items:1,
-            },
-            600:{
-                items:2,
-            },
-            1000:{
-                items:3,
-            }
-        }
-    })
-    // navbar collapse 
-    $(".nav-link").on("click",function()
-    {
-        $(".navbar-collapse").collapse("hide");
-    })
-    // scroll
-    $.scrollIt({
-        topOffset:-50
-    })
     
-})
+    // skills bar animation
+    $(window).scroll(function() {
+        var hT = $("#skill-bar-wrapper").offset().top,
+            hH = $("#skill-bar-wrapper").outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+            
+        if(wS > (hT+hH-1.4*wH)) {
+            $('.skillbar-container').each(function() {
+                $(this).find('.skills').animate({
+                    width: $(this).attr('data-percent')
+                }, 1500); // Faster animation (1.5 seconds)
+            });
+        }
+    });
+    
+    // portfolio filtering
+    $('.filter-btn').click(function(e) {
+        e.preventDefault();
+        $('.filter-btn').removeClass('active');
+        $(this).addClass('active');
+        
+        let selector = $(this).attr('data-filter');
+        $('.grid').isotope({
+            filter: selector
+        });
+    });
+    
+    // Initialize Isotope
+    $('.grid').isotope({
+        itemSelector: '.col-lg-4',
+        layoutMode: 'fitRows'
+    });
+    
+    // image popup
+    $('.image-popup').magnificPopup({
+        type: 'image',
+        gallery: { enabled: true }
+    });
+    
+    // smooth scrolling for anchor links
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+        
+        $('html, body').animate(
+            {
+                scrollTop: $($(this).attr('href')).offset().top - 70,
+            },
+            500,
+            'linear'
+        );
+    });
+    
+    // navbar collapse on click
+    $(".nav-link").on("click", function() {
+        $(".navbar-collapse").collapse("hide");
+    });
+});

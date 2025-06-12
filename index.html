@@ -2,738 +2,509 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">   
-    <!-- main css   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billy Tsane | Fullstack Developer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-  <header class="header-area">
-        <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg  fixed-top">
-          <div class="container">
-             <!-- brand -->
-             <a href="index.html" class="navbar-brand">Billy Tsane</a>
-             <!-- toggler/collapsible button -->
-             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-               <i class="fas fa-bars"></i>
-             </button>
-             <!-- navbar links -->
-             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a href="#home" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#contact" class="nav-link">Contact</a>
-                </li>
-              </ul>
-             </div>
-          </div>
-        </nav>
-        <!-- home section -->
-        <section class="home" id="home" data-scroll-index="0">
-          <div class="header-content d-flex align-items-center">
-            <div id="parallax">
-              <div class="header-shape shape-one" data-depth="0.10">
-                <img src="images/shape/shape-1.png" alt="">
-              </div>
-              <div class="header-shape shape-two" data-depth="0.30">
-                <img src="images/shape/shape-2.png" alt="">
-              </div>
-              <div class="header-shape shape-three" data-depth="0.40">
-                <img src="images/shape/shape-3.png" alt="">
-              </div>
-              <div class="header-shape shape-fore" data-depth="0.60">
-                <img src="images/shape/shape-2.png" alt="">
-              </div>
-              <div class="header-shape shape-five" data-depth="0.20">
-                <img src="images/shape/shape-1.png" alt="">
-              </div>
-              <div class="header-shape shape-six" data-depth="0.15">
-                <img src="images/shape/shape-4.png" alt="">
-              </div>
-              <div class="header-shape shape-seven" data-depth="0.50">
-                <img src="images/shape/shape-5.png" alt="">
-              </div>
-              <div class="header-shape shape-eight" data-depth="0.40">
-                <img src="images/shape/shape-3.png" alt="">
-              </div>
-              <div class="header-shape shape-nine" data-depth="0.20">
-                <img src="images/shape/shape-6.png" alt="">
-              </div>
-              <div class="header-shape shape-ten" data-depth="0.30">
-                <img src="images/shape/shape-3.png" alt="">
-              </div>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Billy Tsane</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="container">
-              <div class="row align-items-center">
-                 <div class="col-lg-6">
-                  <div class="home-text">
-                    <h4>HELLO, I'M</h4>
-                    <h1>BILLY MAX TSANE TSAFACK </h1>
-                    <p>I'm a Master Student in Computer Science</p>
-                    <div class="home-btn">
-                     <a href="#portfolio" class="btn-1">View my work</a>
-                    </div>
+        </div>
+    </nav>
 
-                  </div>
-                </div>
-                    <div class="col-lg-6">
-                     <div class="home-img">
-                      <img src="images/profile-pic.jpeg" alt="">
-                     </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h4>HELLO, I'M</h4>
+                        <h1>BILLY MAX TSANE TSAFACK</h1>
+                        <p class="lead">Master's Student in Computer Science | Fullstack Developer</p>
+                        <div class="cta-buttons">
+                            <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-outline-light ms-3">Hire Me</a>
+                        </div>
                     </div>
-              </div> 
-           </div>
-           <!-- header social -->
-           <div class="header-social">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="header-social-icon">
-                    <ul>
-                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                  </div>
                 </div>
-              </div>
-            </div>
-           </div>
-         </div>
-        </section>
-    </header>
-  <!-- header section end -->
-<!-- about us section start -->
-<section class="about-area section-padding" data-scroll-index="1" id="about">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="section-title">
-          <h4>About</h4>
-          <h2>Personal <span>Details</span></h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="about-content">
-          <!-- about me --> 
-          <h5 class="about-title">I'm <span>Billy Max Tsane Tsafack</span> and Fullstack developer</h5>
-          <p class="details">Student of computer science/business informatics with a focus on software development and experience in full-stack development. Adept in cloud-native development, microservices architectures and DevOps practices. Enthusiastic about working in agile teams and motivated to help shape climate-neutral software solutions.</p>
-          <ul>
-             <!-- Date of Birth -->
-            <li>
-              <div class="single-info d-flex align-items-center">
-                <div class="info-icon text-center">
-                  <i class="fa fa-calendar"></i>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="images/profile-pic.jpeg" alt="Billy Tsane" class="img-fluid">
+                    </div>
                 </div>
-                <div class="info-text">
-                  <p><span>Date of birth:</span> 21 June 1999</p>
-                </div>
-              </div>
-            </li>
-             <!-- Email -->
-            <li>
-              <div class="single-info d-flex align-items-center">
-                <div class="info-icon text-center">
-                  <i class="fa fa-envelope"></i>
-                </div>
-                <div class="info-text">
-                  <p><span>Email:</span> billytsane.bt@gmail.com</p>
-                </div>
-              </div>
-            </li>
-             <!-- Phone -->
-            <li>
-              <div class="single-info d-flex align-items-center">
-                <div class="info-icon text-center">
-                  <i class="fa fa-phone"></i>
-                </div>
-                <div class="info-text">
-                  <p><span>Phone:</span> +49 163 15582 69</p>
-                </div>
-              </div>
-            </li>
-             <!-- Location -->
-            <li>
-              <div class="single-info d-flex align-items-center">
-                <div class="info-icon text-center">
-                  <i class="fa fa-map-marker"></i>
-                </div>
-                <div class="info-text">
-                  <p><span>Location:</span> 66482, Virginiastraße 13, Zweibrücken</p>
-                </div>
-              </div>
-            </li>
-             <!-- Degree -->
-            <li>
-              <div class="single-info d-flex align-items-center">
-                <div class="info-icon text-center">
-                  <i class="fa fa-university"></i>
-                </div>
-                <div class="info-text">
-                  <p><span>Degree:</span> B.Sc. Business Informatics</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+            </div>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div id="skill-bar-wrapper">
-          <div class="text-left">
-             <!-- Programming Languages -->
-            <h2>Programming Languages</h2>
-             <!-- Java -->
-            <h4>Java <span style="float: right;">50%</span></h4>
-            <div class="skillbar-container" data-percent="50%">
-              <div class="skills"></div>
-            </div>^
-            <!-- HTML -->
-            <h4>HTML <span style="float: right;">75%</span></h4>
-            <div class="skillbar-container" data-percent="75%">
-              <div class="skills"></div>
-            </div>
-            <!-- CSS -->
-            <h4>CSS <span style="float: right;">70%</span></h4>
-            <div class="skillbar-container" data-percent="70%">
-              <div class="skills"></div>
-            </div>
-            <!-- Javascript -->
-            <h4>Javascript <span style="float: right;">75%</span></h4>
-            <div class="skillbar-container" data-percent="75%">
-              <div class="skills"></div>
-            </div>
-            <!-- PHP -->
-            <h4>PHP <span style="float: right;">65%</span></h4>
-            <div class="skillbar-container" data-percent="65%">
-              <div class="skills"></div>
-            </div>
-          </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <div id="skill-bar-wrapper">
-          <div class="text-left">
-            <!-- Frameworks -->
-            <h2>Frameworks</h2>
-            <!-- React -->
-            <h4>React <span style="float: right;">75%</span></h4>
-            <div class="skillbar-container" data-percent="75%">
-              <div class="skills"></div>
-            </div>
-            <!-- Laravel -->
-            <h4>Laravel <span style="float: right;">65%</span></h4>
-            <div class="skillbar-container" data-percent="65%">
-              <div class="skills"></div>
-            </div>
-            <!-- Springboot -->
-            <h4>Springboot <span style="float: right;">50%</span></h4>
-            <div class="skillbar-container" data-percent="50%">
-              <div class="skills"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div id="skill-bar-wrapper">
-          <div class="text-left">
-            <!-- Others -->
-            <h2>Others</h2>
-            <!-- MySql -->
-            <h4>MySql & Postgre <span style="float: right;">75%</span></h4>
-            <div class="skillbar-container" data-percent="75%">
-              <div class="skills"></div>
-            </div>
-            <!-- Gitlab ci/cd -->
-            <h4>Gitlab ci/cd <span style="float: right;">75%</span></h4>
-            <div class="skillbar-container" data-percent="75%">
-              <div class="skills"></div>
-            </div>
-            <!-- Docker -->
-            <h4>Docker <span style="float: right;">50%</span></h4>
-            <div class="skillbar-container" data-percent="50%">
-              <div class="skills"></div>
-            </div>
-          </div>
-        </div>
-        <a href="#contact" class="hire-me">Hire Me</a>
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- about us section end -->
-  <!-- services section start 
-  <section class="services section-padding" data-scroll-index="2" id="services">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="section-title">
-            <h4>services</h4>
-            <h2>services <span>i provide</span></h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <i class="fas fa-laptop"></i>
-            </div>
-            <h3>web design</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quasi corporis
-               amet eligendi minima, omnis, ratione doloribus autem nemo provident
-               soluta vel illum magnam numquam?</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <i class="fas fa-edit"></i>
-            </div>
-            <h3>video editing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quasi corporis
-               amet eligendi minima, omnis, ratione doloribus autem nemo provident
-               soluta vel illum magnam numquam?</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3>web development</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quasi corporis
-               amet eligendi minima, omnis, ratione doloribus autem nemo provident
-               soluta vel illum magnam numquam?</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <i class="fas fa-mobile"></i>
-            </div>
-            <h3>android development</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quasi corporis
-               amet eligendi minima, omnis, ratione doloribus autem nemo provident
-               soluta vel illum magnam numquam?</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-    services section end -->
-   <!-- portfolio section start -->
-   <section class="img-gallery section-padding" data-scroll-index="3" id="portfolio">
-     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="section-title">
-            <h4>portfolio</h4>
-            <h2>My latest <span>projects</span></h2>
-          </div>
-        </div>
-      </div>
-      <!-- filter btn -->
-      <div class="row">
-        <div class="col-lg-8 d-flex justify-content-center sortBtn flex-wrap">
-          <a href="#" class="filter-btn active" data-filter="*">all</a>
-          <a href="#" class="filter-btn" data-filter=".academicalprojects">academical projects</a>
-          <a href="#" class="filter-btn" data-filter=".personalprojects">personal projects</a>,
-        </div>
-      </div>
-      <!-- portfolio items -->
-      <div class="row grid">
-        <div class="col-lg-4 col-md-6 col-sm-6 academicalprojects">
-          <div class="single-work text-center mt-30">
-            <div class="work-image">
-              <img src="images/portfolio/robocode.png" alt="">
-            </div>
-            <div class="work-overlay">
-              <div class="work-content">
-                <h3 class="work-title">Robocode</h3>
-                <ul>
-                  <li><a href="robocode.html"><i class="fa fa-link"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div> <!-- single work -->
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 academicalprojects">
-          <div class="single-work text-center mt-30">
-            <div class="work-image">
-              <img src="images/portfolio/Wica.jpeg" alt="">
-            </div>
-            <div class="work-overlay">
-              <div class="work-content">
-                <h3 class="work-title">WICA</h3>
-                <ul>
-                  <li><a href="wica.html"><i class="fa fa-link"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div> <!-- single work -->
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 academicalprojects">
-          <div class="single-work text-center mt-30">
-            <div class="work-image">
-              <img src="images/portfolio/Time tracking.jpeg" alt="">
-            </div>
-            <div class="work-overlay">
-              <div class="work-content">
-                <h3 class="work-title">Time tracking</h3>
-                <ul>
-                  <li><a href="timetracking.html"><i class="fa fa-link"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div> <!-- single work -->
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 academicalprojects">
-          <div class="single-work text-center mt-30">
-            <div class="work-image">
-              <img src="images/portfolio/studentcommunity logo.PNG" alt="">
-            </div>
-            <div class="work-overlay">
-              <div class="work-content">
-                <h3 class="work-title">studentcommunity</h3>
-                <ul>
-                  <li><a href="images/portfolio/studentcommunity logo.PNG" class="image-popup"><i class="fa fa-plus"></i></a></li>
-                  <li><a href="#"><i class="fa fa-link"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div> <!-- single work -->
-        </div>
-        <!--
-        <div class="col-lg-4 col-md-6 col-sm-6 academical projects">
-          <div class="single-work text-center mt-30">
-            <div class="work-image">
-              <img src="images/portfolio/portfolio-5.jpg" alt="">
-            </div>
-            <div class="work-overlay">
-              <div class="work-content">
-                <h3 class="work-title">Product Design</h3>
-                <ul>
-                  <li><a href="images/portfolio/portfolio-5.jpg" class="image-popup"><i class="fa fa-plus"></i></a></li>
-                  <li><a href="#"><i class="fa fa-link"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
-           <!-- single work -->
-            <!--
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 personal projects">
-          <div class="single-work text-center mt-30">
-            <div class="work-image">
-              <img src="images/portfolio/portfolio-6.jpg" alt="">
-            </div>
-            <div class="work-overlay">
-              <div class="work-content">
-                <h3 class="work-title">Product Design</h3>
-                <ul>
-                  <li><a href="images/portfolio/portfolio-6.jpg" class="image-popup"><i class="fa fa-plus"></i></a></li>
-                  <li><a href="#"><i class="fa fa-link"></i></a></li>
-                </ul>
-              </div>
-            </div>-->
-          </div> <!-- single work -->
-        </div>
-      </div>
-     </div>
-   </section>
-    <!-- portfolio section end -->
-    <!-- call to action start -->
-    <section class="call-to-action section-padding">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-8 col-lg-9">
-            <div class="call-action-content text-center">
-              <h2 class="action-title">Have any project in mind</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium 
-                inventore modi quisquam quasi quo cumque iure nisi, sit qui.</p>
-                <ul>
-                  <li><a href="#" class="btn btn-1">Download CV</a></li>
-                  <li><a href="#" class="btn btn-2"> HIRE ME</a></li>
-                </ul>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-    <!-- call to action end --> 
-     <!-- pricing section start 
-     <section class="pricing section-padding" data-scroll-index="5" id="pricing">
-       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="section-title">
-              <h4>pricing</h4>
-              <h2>pricing <span>plan</span></h2>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-plan">
-              <div class="pricing-header">
-                <h3>basic</h3>
-              </div>
-              <div class="pricing-price">
-                <span class="currency">$</span>
-                <span class="price">99</span>
-                <span class="period">/monthly</span>
-              </div>
-              <div class="pricing-body">
-                <ul>
-                  <li><i class="fa fa-check"></i>5 GB Bandwidth</li>
-                  <li><i class="fa fa-check"></i>Free Update</li>
-                  <li><i class="fa fa-check"></i>High Regulation Printing</li>
-                  <li><i class="fa fa-check"></i>Branding</li>
-                  <li><i class="fa fa-check"></i>Others Great Features</li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="btn btn-2">get started</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-plan">
-              <div class="pricing-header">
-                <h3>premium</h3>
-              </div>
-              <div class="pricing-price">
-                <span class="currency">$</span>
-                <span class="price">199</span>
-                <span class="period">/monthly</span>
-              </div>
-              <div class="pricing-body">
-                <ul>
-                  <li><i class="fa fa-check"></i>5 GB Bandwidth</li>
-                  <li><i class="fa fa-check"></i>Free Update</li>
-                  <li><i class="fa fa-check"></i>High Regulation Printing</li>
-                  <li><i class="fa fa-check"></i>Branding</li>
-                  <li><i class="fa fa-check"></i>Others Great Features</li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="btn btn-1">get started</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="pricing-plan">
-              <div class="pricing-header">
-                <h3>ultimate</h3>
-              </div>
-              <div class="pricing-price">
-                <span class="currency">$</span>
-                <span class="price">299</span>
-                <span class="period">/monthly</span>
-              </div>
-              <div class="pricing-body">
-                <ul>
-                  <li><i class="fa fa-check"></i>5 GB Bandwidth</li>
-                  <li><i class="fa fa-check"></i>Free Update</li>
-                  <li><i class="fa fa-check"></i>High Regulation Printing</li>
-                  <li><i class="fa fa-check"></i>Branding</li>
-                  <li><i class="fa fa-check"></i>Others Great Features</li>
-                </ul>
-              </div>
-              <div class="pricing-footer">
-                <a href="#" class="btn btn-2">get started</a>
-              </div>
-            </div>
-          </div>
-        </div>
-       </div>
-     </section>
-      pricing section end -->
-     <!-- faq section start 
-     <div class="faq section-padding">
-       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="section-title">
-              <h4>faq's</h4>
-              <h2>frequently <span>asked</span> queries</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div id="accordion">
-              <div class="accordion-item">
-                <div class="accordion-header" data-toggle="collapse" data-target="#collapse-01">
-                  <h3>100% Fluid Responsive - Fits my device perfectly</h3>
-                </div>
-                <div class="collapse show" id="collapse-01" data-parent="#accordion">
-                  <div class="accordion-body">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid necessitatibus tempore exercitationem facilis accusamus
-                       voluptatibus quis soluta corporis. Sint reprehenderit expedita ad.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-02">
-                  <h3>Clean Code</h3>
-                </div>
-                <div class="collapse" id="collapse-02" data-parent="#accordion">
-                  <div class="accordion-body">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid necessitatibus tempore exercitationem facilis accusamus
-                       voluptatibus quis soluta corporis. Sint reprehenderit expedita ad.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-03">
-                  <h3>flat, modern and clean design</h3>
-                </div>
-                <div class="collapse" id="collapse-03" data-parent="#accordion">
-                  <div class="accordion-body">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid necessitatibus tempore exercitationem facilis accusamus
-                       voluptatibus quis soluta corporis. Sint reprehenderit expedita ad.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
-                  <h3>Custom font support</h3>
-                </div>
-                <div class="collapse" id="collapse-04" data-parent="#accordion">
-                  <div class="accordion-body">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid necessitatibus tempore exercitationem facilis accusamus
-                       voluptatibus quis soluta corporis. Sint reprehenderit expedita ad.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       </div>
-     </div>
-      faq section end -->
-     <!-- contact us section start-->
-     <section class="contact section-padding" data-scroll-index="6" id="contact">
-       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="section-title">
-              <h4>contact us</h4>
-              <h2>get <span>in touch</span></h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-5">
-            <div class="contact-info">
-              <h3>For Any Queries and Support</h3>
-              <div class="contact-info-item">
-                <i class="fas fa-envelope"></i>
-                <h4>Write me at</h4>
-                <p>billytsane.bt@gmail.com</p>
-              </div>
-              <div class="contact-info-item">
-                <i class="fas fa-phone"></i>
-                <h4>Call me on</h4>
-                <p>+49 163 15582 69</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 col-md-7">
-            <div class="contact-form">
-              <form action="">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="text" placeholder="Your Name" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="email" placeholder="Your Email" class="form-control">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <input type="text" placeholder="Your Phone" class="form-control">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <input type="text" placeholder="Subject" class="form-control">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                     <textarea name="" placeholder="You Message" id="" class="form-control"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-                    <button class="btn-2" type="button">Send Message</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-       </div>
-     </section>
-     <!-- contact us section end-->
-     <!-- footer section start -->
-     <footer class="footer">
-       <div class="container">
-         <div class="row">
-           <div class="col-lg-12">
-             <p class="copyright-text">&copy; 2025 by billytsane </p>
-           </div>
-         </div>
-       </div>
-     </footer>
-     <!-- footer section end -->
 
-  <!-- jquery js -->
-  <script src="js/jquery.min.js"></script>
-  <!-- popper js -->
-  <script src="js/popper.min.js"></script>
-  <!-- scrollit js -->
-  <script src="js/scrollit.js"></script>
-  <!-- parallax js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-  <!-- owl carousel js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <!-- magnific popup js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <!-- isotope js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- main js -->
-  <script src="js/main.js"></script>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h4>About Me</h4>
+                <h2>Personal <span>Details</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3>I'm <span>Billy Max Tsane Tsafack</span>, a Fullstack Developer</h3>
+                        <p>Master's student in Computer Science with a focus on software development and experience in full-stack development. Adept in cloud-native development, microservices architectures and DevOps practices. Enthusiastic about working in agile teams and motivated to help shape climate-neutral software solutions.</p>
+                        
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <span>Date of birth:</span>
+                                    <p>21 June 1999</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span>Email:</span>
+                                    <p>billytsane.bt@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span>Phone:</span>
+                                    <p>+49 163 15582 69</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span>Location:</span>
+                                    <p>66482, Virginiastraße 13, Zweibrücken</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <span>Degree:</span>
+                                    <p>B.Sc. Business Informatics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="skills-section">
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>CSS</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>PHP</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Frameworks & Technologies</h3>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>React</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Laravel</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Spring Boot</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MySQL & PostgreSQL</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Docker</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-title">
+                <h4>My Work</h4>
+                <h2>Recent <span>Projects</span></h2>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="*">All</button>
+                <button class="filter-btn" data-filter=".academic">Academic Projects</button>
+                <button class="filter-btn" data-filter=".personal">Personal Projects</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item academic">
+                        <div class="portfolio-card">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/robocode.png" alt="Robocode Project" class="img-fluid">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>Robocode</h3>
+                                    <p>Java-based programming game where I developed AI for virtual robot battles</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="portfolio-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item academic">
+                        <div class="portfolio-card">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/Wica.jpeg" alt="WICA Project" class="img-fluid">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>WICA</h3>
+                                    <p>Web application for course management and student interaction</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="portfolio-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item academic">
+                        <div class="portfolio-card">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/Time tracking.jpeg" alt="Time Tracking Project" class="img-fluid">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>Time Tracking</h3>
+                                    <p>Application for tracking work hours and productivity</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="portfolio-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item academic">
+                        <div class="portfolio-card">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/studentcommunity logo.PNG" alt="Student Community Project" class="img-fluid">
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>Student Community</h3>
+                                    <p>Platform for student collaboration and resource sharing</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="portfolio-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Robocode Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/portfolio/robocode.png" alt="Robocode" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Project Details</h4>
+                            <p><strong>Technologies:</strong> Java, AI Algorithms</p>
+                            <p><strong>Date:</strong> January 2023</p>
+                            <p><strong>Description:</strong> Developed an AI-powered robot for the Robocode programming game. Implemented advanced targeting algorithms and movement patterns to compete against other robots.</p>
+                            <ul>
+                                <li>Implemented radar and gun targeting systems</li>
+                                <li>Developed adaptive movement patterns</li>
+                                <li>Optimized for performance in battle scenarios</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary">View Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">WICA Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/portfolio/Wica.jpeg" alt="WICA" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Project Details</h4>
+                            <p><strong>Technologies:</strong> React, Node.js, MongoDB</p>
+                            <p><strong>Date:</strong> March 2023</p>
+                            <p><strong>Description:</strong> Web application for course management and student interaction at university.</p>
+                            <ul>
+                                <li>Implemented user authentication</li>
+                                <li>Developed course management system</li>
+                                <li>Created discussion forums</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>Want to work together?</h2>
+                <p>I'm currently available for freelance work or internships. Let's discuss how I can contribute to your project.</p>
+                <div class="cta-buttons">
+                    <a href="docs/Billy_Tsane_CV.pdf" class="btn btn-primary" download>Download CV</a>
+                    <a href="#contact" class="btn btn-outline-light ms-3">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h4>Get In Touch</h4>
+                <h2>Contact <span>Me</span></h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>billytsane.bt@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+49 163 15582 69</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>66482, Virginiastraße 13, Zweibrücken, Germany</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p class="copyright">&copy; 2023 Billy Tsane. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
