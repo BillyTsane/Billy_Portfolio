@@ -37,6 +37,10 @@ jobs:
         with:
           path: "./react-portfolio/dist"
 
+      - name: Disable Jekyll
+        run: echo "" > react-portfolio/dist/.nojekyll
+
+
   deploy:
     environment:
       name: github-pages
