@@ -1,4 +1,4 @@
-name: Deploy React (Vite) to GitHub Pages
+name: Deploy React Vite App
 
 on:
   push:
@@ -18,27 +18,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18
 
-      # IMPORTANT: go inside react-portfolio folder
-      - name: Install dependencies
+      - name: Install & Build React App
         run: |
           cd react-portfolio
           npm ci
-
-      - name: Build Vite project
-        run: |
-          cd react-portfolio
           npm run build
 
-      # Upload only react-portfolio/dist
-      - name: Upload artifact
+      - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: "./react-portfolio/dist"
