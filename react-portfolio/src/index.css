@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* DARK THEME (default) */
+:root,
+.dark {
+  --bg: #020617;           /* slate-950 */
+  --bg-alt: #020617;
+  --nav-bg: rgba(15, 23, 42, 0.9);
+  --nav-border: rgba(148, 163, 184, 0.4);
+  --card-bg: rgba(15, 23, 42, 0.95);
+  --card-border: rgba(148, 163, 184, 0.35);
+  --chip-bg: rgba(15, 23, 42, 0.9);
+  --chip-border: rgba(148, 163, 184, 0.45);
+  --chip-text: #e5e7eb;
+  --text: #f9fafb;
+  --muted-text: #cbd5f5;
+}
+
+/* LIGHT THEME */
+.light {
+  --bg: #f8fafc;             /* soft bluish white */
+  --bg-alt: #e5edf5;         /* gentle tint for gradient */
+  --nav-bg: rgba(248, 250, 252, 0.85);
+  --nav-border: rgba(148, 163, 184, 0.35);
+  --card-bg: rgba(255, 255, 255, 0.96);
+  --card-border: rgba(148, 163, 184, 0.32);
+  --chip-bg: rgba(241, 245, 249, 0.95);
+  --chip-border: rgba(148, 163, 184, 0.5);
+  --chip-text: #1f2933;
+  --text: #0f172a;           /* dark navy – high contrast */
+  --muted-text: #475569;     /* slate-600 */
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
